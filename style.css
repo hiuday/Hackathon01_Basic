@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
+body > * {
+  width: 600px;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+}
+/*header*/
+header {
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(./img/beach3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 355px;
+
+  background-image: content-box;
+  position: relative;
+  margin-left: 120px;
+}
+
+.container-head {
+  background-color: rgb(238, 231, 173);
+  width: 40%;
+
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  margin-top: 210px;
+}
+/* body*/
+.body {
+  padding: 20px 10px;
+  width: 90%;
+}
+.container-body {
+  display: inline-block;
+}
+.container-body > img {
+  border-top: 10px solid rgb(213, 213, 51);
+  margin: 20px;
+  width: 450px;
+}
+.container-body > h2 {
+  padding-bottom: 30px;
+}
+@media only screen and (max-width: 998px) {
+  grid-template-columns: (4, 1fr);
+}
